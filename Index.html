@@ -10,178 +10,236 @@
 </head>
 
 <body class="body">
-    <section class="sec1">
+    <section class="all">
+
+        <section class="sec1">
 
 
-        <div>
-            <header>
-                <div class="div_input_search">
-                    <input id="search" type="text" placeholder="Search for cities">
-                </div>
-            </header>
-            <div class="Part1">
-                <div class="ville">
-                    <div>
-                        <h2>Madrid</h2>
-                        <p id="chance">Chance of rain: 0%</p>
+            <div>
+                <header>
+                    <div class="div_input_search">
+                        <input id="search" type="text" placeholder="Search for cities">
+                        <button onclick="searchWeather()">Search</button>
                     </div>
-                    <div class="number1">
-                        <p id="num">
-                            31°
-                        </p>
+                </header>
+                <div class="Part1">
+                    <div class="ville">
+                        <div>
+                            <h2 id=city>Rabat</h2>
+                            <p id="chance">Chance of rain: 0%</p>
+                        </div>
+                        <div class="number1">
+                            <p id="num">
+                                31.5°C
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="icone">
+                        <img id="soleil_icone" src="images et icones/soleil.png" alt="soleil">
+                    </div>
+                </div>
+
+
+                <section class="SEC-Part2">
+
+                    <div class="StatusDeJour">
+                        <div>
+                            <p>TODAY'S FORECAST</p>
+                        </div>
+
+                        <div class="Icones">
+                            <div>
+                                <p>6:00 AM</p>
+                                <img id="icon" src="images et icones/cloud-computing.png" alt="cloud">
+                                <p id="degree">25°</p>
+                            </div>
+                            <div>
+                                <p>6:00 AM</p>
+                                <img id="icon" src="images et icones/nuageux.png" alt="cloud">
+                                <p id="degree">25°</p>
+                            </div>
+                            <div>
+                                <p>6:00 AM</p>
+                                <img id="icon" src="images et icones/soleil.png" alt="cloud">
+                                <p id="degree">25°</p>
+                            </div>
+                            <div>
+                                <p>6:00 AM</p>
+                                <img id="icon" src="images et icones/soleil.png" alt="cloud">
+                                <p id="degree">25°</p>
+                            </div>
+                            <div>
+                                <p>6:00 AM</p>
+                                <img id="icon" src="images et icones/soleil.png" alt="cloud">
+                                <p id="degree">25°</p>
+                            </div>
+                            <div>
+                                <p>6:00 AM</p>
+                                <img id="icon" src="images et icones/nuageux.png" alt="cloud">
+                                <p id="degree">25°</p>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                </div>
-                <div class="icone">
-                    <img id="soleil_icone" src="images et icones/soleil.png" alt="soleil">
-                </div>
+                </section>
+
             </div>
 
 
-            <section class="Part2">
+            <section class="SEC-Part3">
 
-                <div class="StatusDeJour">
-                    <div>
-                        <p>TODAY'S FORECAST</p>
+                <div class="Days">
+
+                    <div class="titre">
+                        <p>7-DAY FORECAST</p>
                     </div>
+                    <div class="jour">
 
-                    <div class="Icones">
-                        <div>
-                            <p>6:00 AM</p>
-                            <img id="icon" src="images et icones/cloud-computing.png" alt="cloud">
-                            <p id="degree">25°</p>
+                        <div id="d1">
+                            <p>Monday</p>
                         </div>
-                        <div>
-                            <p>6:00 AM</p>
-                            <img id="icon" src="images et icones/nuageux.png" alt="cloud">
-                            <p id="degree">25°</p>
+                        <div class="statu">
+                            <img id="Icon_day" src="images et icones/soleil.png" alt="">
+                            <p id="para">Sunny</p>
                         </div>
-                        <div>
-                            <p>6:00 AM</p>
-                            <img id="icon" src="images et icones/soleil.png" alt="cloud">
-                            <p id="degree">25°</p>
-                        </div>
-                        <div>
-                            <p>6:00 AM</p>
-                            <img id="icon" src="images et icones/soleil.png" alt="cloud">
-                            <p id="degree">25°</p>
-                        </div>
-                        <div>
-                            <p>6:00 AM</p>
-                            <img id="icon" src="images et icones/soleil.png" alt="cloud">
-                            <p id="degree">25°</p>
-                        </div>
-                        <div>
-                            <p>6:00 AM</p>
-                            <img id="icon" src="images et icones/nuageux.png" alt="cloud">
-                            <p id="degree">25°</p>
-                        </div>
+                        <div id="bothTemp">36/22</div>
 
                     </div>
+                    <div class="jour">
 
-                </div>
+                        <div id="d1">
+                            <p>Tuesday</p>
+                        </div>
+                        <div class="statu">
+                            <img id="Icon_day" src="images et icones/soleil.png" alt="">
+                            <p id="para">Sunny</p>
+                        </div>
+                        <div id="bothTemp">36/22</div>
+
+                    </div>
+                    <div class="jour">
+
+                        <div id="d1">
+                            <p>Wednesday</p>
+                        </div>
+                        <div class="statu">
+                            <img id="Icon_day" src="images et icones/cloud-computing.png" alt="">
+                            <p id="para">Cloudy</p>
+                        </div>
+                        <div id="bothTemp">36/22</div>
+
+                    </div>
+                    <div class="jour">
+
+                        <div id="d1">
+                            <p>Thursday</p>
+                        </div>
+                        <div class="statu">
+                            <img id="Icon_day" src="images et icones/cloud-computing.png" alt="">
+                            <p id="para">Cloudy</p>
+                        </div id="d1">
+                        <div id="bothTemp">36/22</div>
+
+                    </div>
+                    <div class="jour">
+
+                        <div id="d1">
+                            <p>Friday</p>
+                        </div>
+                        <div class="statu">
+                            <img id="Icon_day" src="images et icones/soleil.png" alt="">
+                            <p id="para">Sunny</p>
+                        </div>
+                        <div id="bothTemp">36/22</div>
+
+                    </div>
+                    <div class="jour">
+
+                        <div id="d1">
+                            <p>Saturday</p>
+                        </div>
+                        <div class="statu">
+                            <img id="Icon_day" src="images et icones/soleil.png" alt="">
+                            <p id="para">Sunny</p>
+                        </div>
+                        <div id="bothTemp">36/22</div>
+
+                    </div>
+                    <div class="jour">
+                        <div id="d1">
+                            <p>Sunday</p>
+                        </div>
+                        <div class="statu">
+                            <img id="Icon_day" src="images et icones/lightning.png" alt="">
+                            <p id="para">Sunny</p>
+                        </div>
+                        <div id="bothTemp">36/22</div>
+
+                    </div>
+
 
             </section>
-
-        </div>
-
-
-        <section class="Part3">
-
-            <div class="Days">
-
-                <div class="titre">
-                    <p>7-DAY FORECAST</p>
-                </div>
-                <div class="jour">
-
-                    <div id="d1">
-                        <p>Monday</p>
-                    </div>
-                    <div class="statu">
-                        <img id="Icon_day" src="images et icones/soleil.png" alt="">
-                        <p>Sunny</p>
-                    </div>
-                    <div>36/22</div>
-
-                </div>
-                <div class="jour">
-
-                    <div id="d1">
-                        <p>Tuesday</p>
-                    </div>
-                    <div class="statu">
-                        <img id="Icon_day" src="images et icones/soleil.png" alt="">
-                        <p>Sunny</p>
-                    </div>
-                    <div>36/22</div>
-
-                </div>
-                <div class="jour">
-
-                    <div id="d1">
-                        <p>Wednesday</p>
-                    </div>
-                    <div class="statu">
-                        <img id="Icon_day" src="images et icones/cloud-computing.png" alt="">
-                        <p>Cloudy</p>
-                    </div>
-                    <div>36/22</div>
-
-                </div>
-                <div class="jour">
-
-                    <div id="d1">
-                        <p>Thursday</p>
-                    </div>
-                    <div class="statu">
-                        <img id="Icon_day" src="images et icones/cloud-computing.png" alt="">
-                        <p>Cloudy</p>
-                    </div id="d1">
-                    <div>36/22</div>
-
-                </div>
-                <div class="jour">
-
-                    <div id="d1">
-                        <p>Friday</p>
-                    </div>
-                    <div class="statu">
-                        <img id="Icon_day" src="images et icones/soleil.png" alt="">
-                        <p>Sunny</p>
-                    </div>
-                    <div>36/22</div>
-
-                </div>
-                <div class="jour">
-
-                    <div id="d1">
-                        <p>Saturday</p>
-                    </div>
-                    <div class="statu">
-                        <img id="Icon_day" src="images et icones/soleil.png" alt="">
-                        <p>Sunny</p>
-                    </div>
-                    <div>36/22</div>
-
-                </div>
-                <div class="jour">
-                    <div id="d1">
-                        <p>Sunday</p>
-                    </div>
-                    <div class="statu">
-                        <img id="Icon_day" src="images et icones/lightning.png" alt="">
-                        <p>Sunny</p>
-                    </div>
-                    <div>36/22</div>
-
-                </div>
-
         </section>
 
 
+        <section class="SEC-Part4">
 
-        </div>
+            <div class="ligne">
+
+                <div class="child">
+
+                    <h1>Wind</h1>
+                    <h2 id="windSpeed">60km/h</h2>
+
+                </div>
+
+                <div class="child">
+
+                    <h1>Humadity</h1>
+                    <h2 id="humidityValue">69%</h2>
+
+                </div>
+
+                <div class="child">
+
+                    <h1>Pressure</h1>
+                    <h2>1000mb</h2>
+
+                </div>
+
+
+                <div class="child">
+
+                    <h1>Wind</h1>
+                    <h2 id="windSpeed">60km/h</h2>
+
+                </div>
+
+                <div class="child">
+
+                    <h1>Humadity</h1>
+                    <h2 id="humidityValue">69%</h2>
+
+                </div>
+
+                <div class="child">
+
+                    <h1>Pressure</h1>
+                    <h2>1000mb</h2>
+
+                </div>
+
+
+
+        </section>
+    </section>
+
+
+
+    <script src="Script.js"></script>
 </body>
 
 </html>
