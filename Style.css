@@ -44,7 +44,7 @@
     margin: 0px;
 }
 #num{
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 500;
     margin: 0px;
 }
@@ -132,3 +132,33 @@
     justify-content: space-between;
     text-align: left;
 }
+.days{
+    display: flex;
+    flex-direction:row;
+    row-gap: 40px;
+}
+#para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#bothTemp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ligne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    height:20%;
+    background-color: rgba(255, 255, 255, 0.326);
+ }
