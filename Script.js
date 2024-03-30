@@ -38,25 +38,11 @@ async function searchWeather() {
 }
 
 
-function dataheurs(heurs){
-    const heur=heurs.list[0].main.temp + "°"
-    document.getElementById('degree1').innerText =heur;
-
-    const heur2=heurs.list[1].main.temp + "°"
-    document.getElementById('degree2').innerText =heur2;
-
-    const heur3=heurs.list[2].main.temp + "°"
-    document.getElementById('degree3').innerText =heur3;
-
-    const heur4=heurs.list[3].main.temp + "°"
-    document.getElementById('degree4').innerText =heur4;
-
-    const heur5=heurs.list[4].main.temp + "°"
-    document.getElementById('degree5').innerText =heur5;
-
-    const heur6=heurs.list[5].main.temp + "°"
-    document.getElementById('degree6').innerText =heur6;
-
+function dataheurs(heurs) {
+    for (let i = 0; i < 6; i++) {
+        const heur = heurs.list[i].main.temp + "°";
+        document.getElementById('degree' + (i + 1)).innerText = heur;
+    }
 }
 
 
