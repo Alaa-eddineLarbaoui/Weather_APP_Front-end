@@ -10,7 +10,7 @@ async function searchWeather() {
     if (villeInput !== '') {
         const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${villeInput}&limit=5&appid=${key}`);
         const data = await response.json();
-        
+
 
 
 
@@ -20,13 +20,12 @@ async function searchWeather() {
             const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
             const weatherResponse = await fetch(weatherUrl);
             const weatherData = await weatherResponse.json();
-    
+
             displayWeather(weatherData);
             const res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${key}`);
             const datahe = await res.json();
-            dataheurs(datahe)
-            
-           
+            console.log(datahe)
+            DataTemperature(datahe)
 
 
         } else {
@@ -38,10 +37,10 @@ async function searchWeather() {
 }
 
 
-function dataheurs(heurs) {
+function DataTemperature(Temps) {
     for (let i = 0; i < 6; i++) {
-        const heur = heurs.list[i].main.temp + "°";
-        document.getElementById('degree' + (i + 1)).innerText = heur;
+        const degree = Temps.list[i].main.temp + "°";
+        document.getElementById('degree' + (i + 1)).innerText = degree;
     }
 }
 
@@ -59,9 +58,11 @@ function displayWeather(data) {
 
     const temperatureCelsius = (data.main.temp - 273.15).toFixed(1)+ '°C';
     document.getElementById('num').innerText = temperatureCelsius ;
+    const feels_like = (data.main.feels_like - 273.15).toFixed(1)+ '°C';
+    document.getElementById('Real_Feel').innerText = feels_like ;
 
-
- 
+    const Pressure= data.main.pressure + ' hPa';
+    document.getElementById('Pressure').innerText = Pressure;
 
 }
 
