@@ -46,7 +46,7 @@ function DataTemperature(Temps) {
 
 
 function displayWeather(data) {
-
+console.log(data)
     const windSpeed = data.wind.speed + 'km/h';
     document.getElementById('windSpeed').innerText = windSpeed;
 
@@ -63,6 +63,8 @@ function displayWeather(data) {
 
     const Pressure= data.main.pressure + ' hPa';
     document.getElementById('Pressure').innerText = Pressure;
+    const country= data.sys.country;
+    document.getElementById('Country').innerText = country;
 
 }
 
