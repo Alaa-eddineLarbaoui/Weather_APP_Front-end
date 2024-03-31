@@ -89,7 +89,7 @@
     height: 45px;
 
 }
-#degree{
+.degree{
    
     display: flex;
     justify-content: center; 
